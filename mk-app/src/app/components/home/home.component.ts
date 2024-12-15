@@ -4,13 +4,15 @@ import {HousingLocation} from '../../interface/housinglocation';
 import {CommonModule} from '@angular/common';
 import {HousingService} from '../../services/housing.service';
 import {RouterModule} from '@angular/router';
+import {FormsModule} from '@angular/forms';
 
 @Component({
   selector: 'app-home',
   imports: [
     CommonModule,
     HousingLocationComponent,
-    RouterModule
+    RouterModule,
+    FormsModule
   ],
   templateUrl: 'home.component.html',
   styleUrl: './home.component.scss',

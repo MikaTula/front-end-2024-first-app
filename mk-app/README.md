@@ -1,11 +1,13 @@
 # MkApp
 
-## project uses local angular install
+# Project uses local angular install
 use ng like
 npx -p @angular/cli ng
 
-### example
+### Run scripts example
 ```bash
+// для запуска локального ng нужно использовать префиксы
+
 npx -p @angular/cli ng new mk-app
 npx -p @angular/cli ng generate component components/housingLocation
 
@@ -14,7 +16,10 @@ npx -p @angular/cli ng generate interface interfaces/housinglocation
 npx -p @angular/cli ng generate service services/housing --skip-tests
 
 npx -p @angular/cli ng generate component components/details
+```
 
+### json-server problems
+```bash
 // 3000 оказался занят
 Если не запускается - возможно, может помочь - PowerShell
 Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
